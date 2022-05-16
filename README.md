@@ -1,3 +1,4 @@
+### MYSQL CREATE database/ table
 #### **Create Database**
 ```sql
 CREATE DATABASE database_name;
