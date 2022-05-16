@@ -95,3 +95,10 @@ INSERT INTO Girls VALUES
 (9,'Bibo','Bibo9B'), 
 (10,'Ann','Ann10A');
 ```
+
+### MYSQL SELECT 
+> How to search records from a table
+#### **Search/Select all columns**
+```sql
+INSERT INTO table_name(column_1,column_2,...) VALUES (value_1,value_2,...);
+```
