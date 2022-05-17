@@ -69,7 +69,7 @@ CREATE TABLE students
   date DATE
 );
 ```
-#### **Show TABLES**
+#### **Show Tables**
 ```sql
 SHOW TABLES;
 ```
