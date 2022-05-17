@@ -83,3 +83,27 @@ mysql> SHOW TABLES;
 +-----------------+
 2 rows in set (0.00 sec)
 ```
+
+#### **Explain/Describe Table**
+```sql
+DESCRIBE table_name;
+(or)
+DESC table_name;
+(or)
+EXPLAIN table_name;
+```
+```sql
+mysql> DESCRIBE students;
+(or)
+mysql> DESC students;
+(or)
+mysql> EXPLAIN students;
++--------------+-------------+------+-----+---------+----------------+
+| Field        | Type        | Null | Key | Default | Extra          |
++--------------+-------------+------+-----+---------+----------------+
+| student_id   | int         | NO   | PRI | NULL    | auto_increment |
+| student_name | varchar(20) | YES  |     | NULL    |                |
+| date         | date        | YES  |     | NULL    |                |
++--------------+-------------+------+-----+---------+----------------+
+3 rows in set (0.00 sec)
+```
