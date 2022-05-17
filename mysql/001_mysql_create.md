@@ -69,3 +69,17 @@ CREATE TABLE students
   date DATE
 );
 ```
+#### **Show TABLES**
+```sql
+SHOW TABLES;
+```
+```sql
+mysql> SHOW TABLES;
++-----------------+
+| Tables_in_my_db |
++-----------------+
+| Girls           |
+| students        |
++-----------------+
+2 rows in set (0.00 sec)
+```
