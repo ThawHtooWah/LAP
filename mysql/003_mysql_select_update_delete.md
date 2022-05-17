@@ -48,11 +48,50 @@ mysql> SELECT * FROM Girls WHERE No = 10 OR Name = 'Bibo';
 ### MYSQL SELECT with IN/ NOT IN Keywords
 #### **Search with IN Keyword**
 ```sql
+SELECT * FROM table_name WHERE table_name IN (...);
+```
+```sql
+mysql> SELECT * FROM Girls WHERE No IN (1,2,3);
+```
+#### **Search with NOT IN Keyword**
+```sql
 SELECT * FROM table_name WHERE table_name NOT IN (...);
 ```
 ```sql
 mysql> SELECT * FROM Girls WHERE No NOT IN (1,2,3);
 ```
-
+### MYSQL SELECT with comparison operators
+#### **Search with = Equal Operator**
+```sql
+SELECT * FROM table_name WHERE column_name = value;
+```
+```sql
+mysql> SELECT * FROM Girls WHERE Name = 'Ann';
+```
+#### **Search with > greater than Operator**
+```sql
+SELECT * FROM table_name WHERE column_name > value;
+```
+```sql
+mysql> SELECT * FROM Girls WHERE No > 5;
+```
+#### **Search with < greater than Operator**
+```sql
+SELECT * FROM table_name WHERE column_name < value;
+```
+```sql
+mysql> SELECT * FROM Girls WHERE No < 5;
+```
+#### **Search with <> or != not equal Operator**
+```sql
+SELECT * FROM table_name WHERE column_name <> value;
+(or)
+SELECT * FROM table_name WHERE column_name != value;
+```
+```sql
+mysql> SELECT * FROM Girls WHERE No <> 5;
+(or)
+mysql> SELECT * FROM Girls WHERE No != 5;
+```
 
 
