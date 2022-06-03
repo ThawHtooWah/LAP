@@ -83,6 +83,29 @@ mysql> ALTER TABLE students
 | student_name | varchar(100) | YES  |     | NULL    |                |
 | date         | date         | YES  |     | NULL    |                |
 +--------------+--------------+------+-----+---------+----------------+
+```
 
+#### **5.4 RENAME Table**
+```sql
+RENAME TABLE old_table_name TO new_table_name;
+```
+```sql
+mysql> RENAME TABLE students to Students;
+
+-- Before
++-----------------+
+| Tables_in_my_db |
++-----------------+
+| Girls           |
+| students        |
++-----------------+
+
+-- After
++-----------------+
+| Tables_in_my_db |
++-----------------+
+| Girls           |
+| Students        |
++-----------------+
 ```
 
