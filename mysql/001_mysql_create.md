@@ -1,6 +1,6 @@
 ### MYSQL CREATE database/ table
 > How to create databases and tables
-#### **Create Database**
+#### **1.1 Create Database**
 ```sql
 CREATE DATABASE database_name;
 ```
@@ -9,7 +9,7 @@ mysql> CREATE DATABASE my_db;
 Query OK, 1 row affected (0.03 sec)
 ```
 
-#### **Show Databases**
+#### **1.2 Show Databases**
 ```sql
 SHOW DATABASES;
 ```
@@ -27,7 +27,7 @@ mysql> SHOW DATABASES;
 6 rows in set (0.00 sec)
 ```
 
-#### **Drop Database**
+#### **1.3 Drop Database**
 ```sql
 DROP DATABASE database_name;
 ```
@@ -36,7 +36,7 @@ mysql> DROP DATABASE my_db;
 Query OK, 0 rows affected (0.05 sec)
 ```
 
-#### **Use Database**
+#### **1.4 Use Database**
 ```sql
 USE database_name
 ```
@@ -45,7 +45,7 @@ mysql> USE my_db
 Database changed
 ```
 
-#### **Create Table**
+#### **1.5 Create Table**
 ```sql
 CREATE TABLE table_name
 (
@@ -69,7 +69,7 @@ CREATE TABLE students
   date DATE
 );
 ```
-#### **Show Tables**
+#### **1.6 Show Tables**
 ```sql
 SHOW TABLES;
 ```
@@ -84,7 +84,7 @@ mysql> SHOW TABLES;
 2 rows in set (0.00 sec)
 ```
 
-#### **Explain/Describe Table**
+#### **1.7 Explain/Describe Table**
 ```sql
 DESCRIBE table_name;
 (or)
