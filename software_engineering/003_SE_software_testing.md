@@ -25,7 +25,7 @@ This is the first step of the process of software testing and on this step progr
 
 ### Process of unit testing
 In the process of unit testing there is need to required data or information about other module. With the help of driver and stubs we can easily get. A programmer which gives the test and passes it to where module tested is called driver. Which programs used to replace module and subordinates of the module being tested is called stubs. Stubs and driver are the need of unit testing process. Quantity of stubs and drives can be reduced if they have the quality of simplicity.
-
+   
 ----------------
 
 ## Integration Test
