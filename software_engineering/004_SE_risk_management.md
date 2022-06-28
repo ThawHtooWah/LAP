@@ -24,7 +24,7 @@ These categories suggested by Charette.
    - Known risks : These risk are unwrapped after the project plan is evaluated.
    - Predictable risks : These risks are estimated from previous project experience.
    - Unpredictable risks : These risks are unknown and are extremely tough to identify in advance.
-
+----------
 ### Principles of risk management   
   - **Maintain a global perspective** - View software risks in the context of a system and the business problem planned to solve.
   - **Take a forward looking view** - Think about the risk which may occur in the future and create future plans for managing the future events.
