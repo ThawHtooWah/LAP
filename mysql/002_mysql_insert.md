@@ -23,3 +23,30 @@ INSERT INTO Girls VALUES
 (9,'Bibo','Bibo9B'), 
 (10,'Ann','Ann10A');
 ```
+-----
+
+#### **Last Insert ID**
+```sql
+mysql> select * from Students;
++------------+--------------+------------+-----------------+
+| student_id | student_name | date       | email           |
++------------+--------------+------------+-----------------+
+|          1 | tt           | 2022-06-01 | tt@gmail.com    |
+|          2 | John         | 2022-06-02 | NULL            |
+|          3 | Smith        | 2022-06-03 | NULL            |
+|          4 | Ann          | 2022-06-04 | ann@gmail.com   |
+|          5 | WIlly        | 2022-06-05 | willy@gmail.com |
++------------+--------------+------------+-----------------+
+
+mysql> Insert into Students(student_name, date)  values ('Zan', '2022-06-20');
+Query OK, 1 row affected (0.04 sec)
+
+mysql> select last_insert_id();
++------------------+
+| last_insert_id() |
++------------------+
+|                6 |
++------------------+
+1 row in set (0.00 sec)
+
+```
