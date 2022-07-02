@@ -41,7 +41,7 @@ SELECT MIN(amount) AS min_amount, MAX(amount) AS max_amount FROM transactions;
 
 ```
 
-#### **12.3 Distinct**
+#### **12.3 DISTINCT**
 ```sql
 SELECT DISTINCT category AS unique_categories FROM transactions;
 
