@@ -2,7 +2,7 @@
 > How to search and match the data using the operator LIKE and NOT LIKE
 
 ```sql
-mysql> SELECT *  FROM Students;
+SELECT *  FROM Students;
 +------------+--------------+------------+-----------------+
 | student_id | student_name | date       | email           |
 +------------+--------------+------------+-----------------+
@@ -20,7 +20,7 @@ mysql> SELECT *  FROM Students;
 SELECT * FROM table_name WHERE column_name LIKE 'search_key%';
 ```
 ```sql
-mysql> SELECT *  FROM Students WHERE student_name LIKE 'Jo%';
+SELECT *  FROM Students WHERE student_name LIKE 'Jo%';
 +------------+--------------+------------+-------+
 | student_id | student_name | date       | email |
 +------------+--------------+------------+-------+
@@ -33,7 +33,7 @@ mysql> SELECT *  FROM Students WHERE student_name LIKE 'Jo%';
 SELECT * FROM table_name WHERE column_name LIKE '%search_key';
 ```
 ```sql
-mysql> SELECT *  FROM Students WHERE student_name NOT LIKE '%n';
+SELECT *  FROM Students WHERE student_name NOT LIKE '%n';
 +------------+--------------+------------+-----------------+
 | student_id | student_name | date       | email           |
 +------------+--------------+------------+-----------------+
@@ -49,7 +49,7 @@ mysql> SELECT *  FROM Students WHERE student_name NOT LIKE '%n';
 SELECT * FROM table_name WHERE column_name LIKE 'searchkey__';
 ```
 ```sql
-mysql> SELECT *  FROM Students WHERE student_name LIKE 'Wil__';
+SELECT *  FROM Students WHERE student_name LIKE 'Wil__';
 +------------+--------------+------------+-----------------+
 | student_id | student_name | date       | email           |
 +------------+--------------+------------+-----------------+
@@ -62,7 +62,7 @@ mysql> SELECT *  FROM Students WHERE student_name LIKE 'Wil__';
 SELECT * FROM table_name WHERE column_name NOT LIKE '_searchkey';
 ```
 ```sql
-mysql> SELECT *  FROM Students WHERE student_name NOT LIKE '_nn';
+SELECT *  FROM Students WHERE student_name NOT LIKE '_nn';
 +------------+--------------+------------+-----------------+
 | student_id | student_name | date       | email           |
 +------------+--------------+------------+-----------------+

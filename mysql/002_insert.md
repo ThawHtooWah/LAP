@@ -27,7 +27,7 @@ INSERT INTO Girls VALUES
 
 #### **2.2 Last Insert ID**
 ```sql
-mysql> select * from Students;
+select * from Students;
 +------------+--------------+------------+-----------------+
 | student_id | student_name | date       | email           |
 +------------+--------------+------------+-----------------+
@@ -38,10 +38,10 @@ mysql> select * from Students;
 |          5 | WIlly        | 2022-06-05 | willy@gmail.com |
 +------------+--------------+------------+-----------------+
 
-mysql> INSERT INTO Students(student_name, date) VALUES ('Zan', '2022-06-20');
+INSERT INTO Students(student_name, date) VALUES ('Zan', '2022-06-20');
 Query OK, 1 row affected (0.04 sec)
 
-mysql> select last_insert_id();
+select last_insert_id();
 +------------------+
 | last_insert_id() |
 +------------------+

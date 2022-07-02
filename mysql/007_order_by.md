@@ -6,7 +6,7 @@
 SELECT * FROM table_name ORDER BY column_name;
 ```
 ```sql
-mysql> SELECT * FROM Students ORDER BY student_name;
+SELECT * FROM Students ORDER BY student_name;
 +------------+--------------+------------+-----------------+
 | student_id | student_name | date       | email           |
 +------------+--------------+------------+-----------------+
@@ -25,7 +25,7 @@ mysql> SELECT * FROM Students ORDER BY student_name;
 SELECT * FROM table_name ORDER BY column_name DESC;
 ```
 ```sql
-mysql> SELECT * FROM Students ORDER BY student_id DESC;
+SELECT * FROM Students ORDER BY student_id DESC;
 +------------+--------------+------------+-----------------+
 | student_id | student_name | date       | email           |
 +------------+--------------+------------+-----------------+

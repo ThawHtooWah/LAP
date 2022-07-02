@@ -5,7 +5,7 @@
 CREATE DATABASE database_name;
 ```
 ```sql
-mysql> CREATE DATABASE my_db;
+CREATE DATABASE my_db;
 Query OK, 1 row affected (0.03 sec)
 ```
 
@@ -14,7 +14,7 @@ Query OK, 1 row affected (0.03 sec)
 SHOW DATABASES;
 ```
 ```sql
-mysql> SHOW DATABASES;
+SHOW DATABASES;
 +--------------------+
 | Database           |
 +--------------------+
@@ -32,7 +32,7 @@ mysql> SHOW DATABASES;
 DROP DATABASE database_name;
 ```
 ```sql
-mysql> DROP DATABASE my_db;
+DROP DATABASE my_db;
 Query OK, 0 rows affected (0.05 sec)
 ```
 
@@ -41,7 +41,7 @@ Query OK, 0 rows affected (0.05 sec)
 USE database_name
 ```
 ```sql
-mysql> USE my_db
+USE my_db
 Database changed
 ```
 
@@ -74,7 +74,7 @@ CREATE TABLE students
 SHOW TABLES;
 ```
 ```sql
-mysql> SHOW TABLES;
+SHOW TABLES;
 +-----------------+
 | Tables_in_my_db |
 +-----------------+
@@ -93,11 +93,11 @@ DESC table_name;
 EXPLAIN table_name;
 ```
 ```sql
-mysql> DESCRIBE students;
+DESCRIBE students;
 (or)
-mysql> DESC students;
+DESC students;
 (or)
-mysql> EXPLAIN students;
+EXPLAIN students;
 +--------------+-------------+------+-----+---------+----------------+
 | Field        | Type        | Null | Key | Default | Extra          |
 +--------------+-------------+------+-----+---------+----------------+

@@ -4,7 +4,7 @@
 
 #### **9.1 LIMIT**
 ```sql
-mysql> SELECT * FROM Students LIMIT 1;
+SELECT * FROM Students LIMIT 1;
 +------------+--------------+------------+--------------+
 | student_id | student_name | date       | email        |
 +------------+--------------+------------+--------------+
@@ -14,7 +14,7 @@ mysql> SELECT * FROM Students LIMIT 1;
 
 #### **9.2 OFFSET**
 ```sql
-mysql> SELECT * FROM Students LIMIT 1 OFFSET 2;
+SELECT * FROM Students LIMIT 1 OFFSET 2;
 +------------+--------------+------------+-------+
 | student_id | student_name | date       | email |
 +------------+--------------+------------+-------+
@@ -23,7 +23,7 @@ mysql> SELECT * FROM Students LIMIT 1 OFFSET 2;
 
 (OR)
 
-mysql> SELECT * FROM Students LIMIT 2,1;
+SELECT * FROM Students LIMIT 2,1;
 +------------+--------------+------------+-------+
 | student_id | student_name | date       | email |
 +------------+--------------+------------+-------+

@@ -3,10 +3,10 @@
 
 #### **8.1 Single Quote**
 ```sql
-mysql> INSERT INTO Students VALUES (7, 'Thaws\'' , '2022-01-01', 'thaws@gmail.com');
+INSERT INTO Students VALUES (7, 'Thaws\'' , '2022-01-01', 'thaws@gmail.com');
 ```
 ```
-mysql> SELECT * FROM Students;
+SELECT * FROM Students;
 +------------+--------------+------------+-----------------+
 | student_id | student_name | date       | email           |
 +------------+--------------+------------+-----------------+
@@ -23,10 +23,10 @@ mysql> SELECT * FROM Students;
 
 #### **8.2 Double Quotes**
 ```sql
-mysql> UPDATE Students SET student_name = 'Thaws\"' WHERE student_name = 'Thaws\'';
+UPDATE Students SET student_name = 'Thaws\"' WHERE student_name = 'Thaws\'';
 ```
 ```
-mysql> SELECT * FROM Students;
+SELECT * FROM Students;
 +------------+--------------+------------+-----------------+
 | student_id | student_name | date       | email           |
 +------------+--------------+------------+-----------------+

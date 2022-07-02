@@ -5,7 +5,7 @@
 UPDATE table_name SET column_name = new_value WHERE condition;
 ```
 ```sql
-mysql> UPDATE Girls SET Name = 'Alice' WHERE Name = 'Alica';
+UPDATE Girls SET Name = 'Alice' WHERE Name = 'Alica';
 Query OK, 1 row affected (0.02 sec)
 Rows matched: 1  Changed: 1  Warnings: 0
 
@@ -31,7 +31,7 @@ Rows matched: 1  Changed: 1  Warnings: 0
 DELETE FROM table_name WHERE condition;
 ```
 ```sql
-mysql> DELETE FROM Girls WHERE Name = 'Alice';
+DELETE FROM Girls WHERE Name = 'Alice';
 Query OK, 1 row affected (0.01 sec)
 
 -- Before
@@ -55,7 +55,7 @@ Query OK, 1 row affected (0.01 sec)
 DROP TABLE table_name;
 ```
 ```sql
-mysql> DROP TABLE Girls;
+DROP TABLE Girls;
 Query OK, 0 rows affected (0.04 sec)
 ```
 ---
@@ -65,10 +65,10 @@ Query OK, 0 rows affected (0.04 sec)
 TRUNCATE TABLE table_name;
 ```
 ```sql
-mysql> TRUNCATE TABLE Girls;
+TRUNCATE TABLE Girls;
 Query OK, 0 rows affected (0.07 sec)
 
-mysql> SELECT * FROM Girls;
+SELECT * FROM Girls;
 Empty set (0.00 sec)
 ```
 

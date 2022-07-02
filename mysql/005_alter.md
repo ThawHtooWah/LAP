@@ -5,9 +5,9 @@
 ALTER TABLE table_name ADD COLUMN column_name data_type AFTER column_name;
 ```
 ```sql
-mysql> ALTER TABLE students
-    -> ADD COLUMN email VARCHAR(20)
-    -> AFTER student_name;
+ALTER TABLE students
+ADD COLUMN email VARCHAR(20)
+AFTER student_name;
 
 -- Before
 +--------------+-------------+------+-----+---------+----------------+
@@ -34,8 +34,7 @@ mysql> ALTER TABLE students
 ALTER TABLE table_name DROP COLUMN column_name;
 ```
 ```sql
-mysql> ALTER TABLE students
-    -> DROP COLUMN email;
+ALTER TABLE students DROP COLUMN email;
 
 -- Before
 +--------------+-------------+------+-----+---------+----------------+
@@ -62,9 +61,9 @@ mysql> ALTER TABLE students
 ALTER TABLE table_name CHANGE COLUMN old_column_name new_column_name data_type;
 ```
 ```sql
-mysql> ALTER TABLE students 
-    -> CHANGE student_name 
-    -> student_name varchar(100);
+ALTER TABLE students 
+CHANGE student_name 
+student_name varchar(100);
 
 -- Before
 +--------------+-------------+------+-----+---------+----------------+
@@ -90,7 +89,7 @@ mysql> ALTER TABLE students
 RENAME TABLE old_table_name TO new_table_name;
 ```
 ```sql
-mysql> RENAME TABLE students to Students;
+RENAME TABLE students to Students;
 
 -- Before
 +-----------------+

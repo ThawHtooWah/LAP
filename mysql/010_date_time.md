@@ -2,7 +2,7 @@
 #### **10.1 Current Date and Time**
 - NOW() and CURRENT_TIMESTAMP() are the same.
 ```sql
-mysql> SELECT NOW(), CURRENT_TIMESTAMP();
+SELECT NOW(), CURRENT_TIMESTAMP();
 +---------------------+---------------------+
 | NOW()               | CURRENT_TIMESTAMP() |
 +---------------------+---------------------+
@@ -12,7 +12,7 @@ mysql> SELECT NOW(), CURRENT_TIMESTAMP();
 
 - CURDATE() and CURRENT_DATE() are the same.
 ```sql
-mysql> SELECT CURDATE(), CURRENT_DATE();
+SELECT CURDATE(), CURRENT_DATE();
 +------------+----------------+
 | CURDATE()  | CURRENT_DATE() |
 +------------+----------------+
@@ -22,7 +22,7 @@ mysql> SELECT CURDATE(), CURRENT_DATE();
 
 - CURTIME() and CURRENT_TIME() are the same.
 ```sql
-mysql> SELECT CURTIME(), CURRENT_TIME();
+SELECT CURTIME(), CURRENT_TIME();
 +-----------+----------------+
 | CURTIME() | CURRENT_TIME() |
 +-----------+----------------+
@@ -32,10 +32,10 @@ mysql> SELECT CURTIME(), CURRENT_TIME();
 
 #### **10.1 Day, Week, Month, Year**
 ```sql
-mysql> SELECT DAY(NOW()) AS day_of_month,
-    -> WEEK(NOW()) AS week_of_year, 
-    -> MONTH(NOW()) AS month_of_year,
-    -> YEAR(NOW()) AS year;
+SELECT DAY(NOW()) AS day_of_month,
+WEEK(NOW()) AS week_of_year, 
+MONTH(NOW()) AS month_of_year,
+YEAR(NOW()) AS year;
 +--------------+--------------+---------------+------+
 | day_of_month | week_of_year | month_of_year | year |
 +--------------+--------------+---------------+------+

@@ -1,11 +1,12 @@
 ### MYSQL SELECT 
 > How to search records from a table
+### **3.1 MYSQL SELECT**
 #### **Search all columns**
 ```sql
 SELECT * FROM table_name;
 ```
 ```sql
-mysql> SELECT * FROM Girls;
+SELECT * FROM Girls;
 +------+-------+---------+
 | No   | Name  | Nric    |
 +------+-------+---------+
@@ -19,7 +20,7 @@ mysql> SELECT * FROM Girls;
 SELECT column1, column FROM table_name;
 ```
 ```sql
-mysql> SELECT No, Name FROM Girls;
+SELECT No, Name FROM Girls;
 +------+-------+
 | No   | Name  |
 +------+-------+
@@ -33,7 +34,7 @@ mysql> SELECT No, Name FROM Girls;
 SELECT column_name AS alias_name FROM table_name;
 ```
 ```sql
-mysql> SELECT Name AS girls_name FROM Girls;
+SELECT Name AS girls_name FROM Girls;
 +------------+
 | girls_name |
 +------------+
@@ -43,12 +44,12 @@ mysql> SELECT Name AS girls_name FROM Girls;
 2 rows in set (0.00 sec)
 ```
 
-### MYSQL SELECT with WHERE clause 
+### **3.2 MYSQL SELECT with WHERE clause**
 ```sql
 SELECT * FROM table_name WHERE condition;
 ```
 ```sql
-mysql> SELECT * FROM Girls WHERE Name = 'Alica';
+SELECT * FROM Girls WHERE Name = 'Alica';
 +------+-------+---------+
 | No   | Name  | Nric    |
 +------+-------+---------+
@@ -57,13 +58,13 @@ mysql> SELECT * FROM Girls WHERE Name = 'Alica';
 1 row in set (0.00 sec)
 ```
 
-### MYSQL SELECT with logical operators
+### **3.3 MYSQL SELECT with logical operators**
 #### **Search with AND operator**
 ```sql
 SELECT * FROM table_name WHERE condition AND condition;
 ```
 ```sql
-mysql> SELECT * FROM Girls WHERE No = 1 AND Name = 'Alica';
+SELECT * FROM Girls WHERE No = 1 AND Name = 'Alica';
 +------+-------+---------+
 | No   | Name  | Nric    |
 +------+-------+---------+
@@ -76,7 +77,7 @@ mysql> SELECT * FROM Girls WHERE No = 1 AND Name = 'Alica';
 SELECT * FROM table_name WHERE condition OR condition;
 ```
 ```sql
-mysql> SELECT * FROM Girls WHERE No = 1 OR Name = 'Betty';
+SELECT * FROM Girls WHERE No = 1 OR Name = 'Betty';
 +------+-------+---------+
 | No   | Name  | Nric    |
 +------+-------+---------+
@@ -85,13 +86,13 @@ mysql> SELECT * FROM Girls WHERE No = 1 OR Name = 'Betty';
 +------+-------+---------+
 2 rows in set (0.00 sec)
 ```
-### MYSQL SELECT with IN/ NOT IN Keywords
+### **3.4 MYSQL SELECT with IN/ NOT IN Keywords**
 #### **Search with IN Keyword**
 ```sql
 SELECT * FROM table_name WHERE table_name IN (...);
 ```
 ```sql
-mysql> SELECT * FROM Girls WHERE No IN (1,2);
+SELECT * FROM Girls WHERE No IN (1,2);
 +------+-------+---------+
 | No   | Name  | Nric    |
 +------+-------+---------+
@@ -105,7 +106,7 @@ mysql> SELECT * FROM Girls WHERE No IN (1,2);
 SELECT * FROM table_name WHERE table_name NOT IN (...);
 ```
 ```sql
-mysql> SELECT * FROM Girls WHERE No NOT IN (1);
+SELECT * FROM Girls WHERE No NOT IN (1);
 +------+-------+---------+
 | No   | Name  | Nric    |
 +------+-------+---------+
@@ -113,13 +114,13 @@ mysql> SELECT * FROM Girls WHERE No NOT IN (1);
 +------+-------+---------+
 1 row in set (0.00 sec)
 ```
-### MYSQL SELECT with comparison operators
+### **3.5 MYSQL SELECT with comparison operators**
 #### **Search with = Equal Operator**
 ```sql
 SELECT * FROM table_name WHERE column_name = value;
 ```
 ```sql
-mysql> SELECT * FROM Girls WHERE Name = 'Betty';
+SELECT * FROM Girls WHERE Name = 'Betty';
 +------+-------+---------+
 | No   | Name  | Nric    |
 +------+-------+---------+
@@ -132,7 +133,7 @@ mysql> SELECT * FROM Girls WHERE Name = 'Betty';
 SELECT * FROM table_name WHERE column_name > value;
 ```
 ```sql
-mysql> SELECT * FROM Girls WHERE No > 1;
+SELECT * FROM Girls WHERE No > 1;
 +------+-------+---------+
 | No   | Name  | Nric    |
 +------+-------+---------+
@@ -145,7 +146,7 @@ mysql> SELECT * FROM Girls WHERE No > 1;
 SELECT * FROM table_name WHERE column_name < value;
 ```
 ```sql
-mysql> SELECT * FROM Girls WHERE No < 2;
+SELECT * FROM Girls WHERE No < 2;
 +------+-------+---------+
 | No   | Name  | Nric    |
 +------+-------+---------+
@@ -160,7 +161,7 @@ SELECT * FROM table_name WHERE column_name <> value;
 SELECT * FROM table_name WHERE column_name != value;
 ```
 ```sql
-mysql> SELECT * FROM Girls WHERE No <>1;
+SELECT * FROM Girls WHERE No <>1;
 +------+-------+---------+
 | No   | Name  | Nric    |
 +------+-------+---------+
@@ -170,7 +171,7 @@ mysql> SELECT * FROM Girls WHERE No <>1;
 
 (or)
 
-mysql> SELECT * FROM Girls WHERE No != 1;
+SELECT * FROM Girls WHERE No != 1;
 +------+-------+---------+
 | No   | Name  | Nric    |
 +------+-------+---------+
