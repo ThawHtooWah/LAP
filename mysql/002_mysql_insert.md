@@ -1,6 +1,6 @@
 ### MYSQL INSERT INTO TABLE
 > How to insert records into a table
-#### **Insert into table**
+#### **2.1 Insert into table**
 ```sql
 INSERT INTO table_name(column_1,column_2,...) VALUES (value_1,value_2,...);
 ```
@@ -25,7 +25,7 @@ INSERT INTO Girls VALUES
 ```
 -----
 
-#### **Last Insert ID**
+#### **2.2 Last Insert ID**
 ```sql
 mysql> select * from Students;
 +------------+--------------+------------+-----------------+
@@ -38,7 +38,7 @@ mysql> select * from Students;
 |          5 | WIlly        | 2022-06-05 | willy@gmail.com |
 +------------+--------------+------------+-----------------+
 
-mysql> Insert into Students(student_name, date)  values ('Zan', '2022-06-20');
+mysql> INSERT INTO Students(student_name, date) VALUES ('Zan', '2022-06-20');
 Query OK, 1 row affected (0.04 sec)
 
 mysql> select last_insert_id();
@@ -48,5 +48,4 @@ mysql> select last_insert_id();
 |                6 |
 +------------------+
 1 row in set (0.00 sec)
-
 ```
