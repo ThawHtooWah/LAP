@@ -3,6 +3,14 @@ Assignment name format - **assignmnet1_name.txt**
 
 Please upload the assignment here - https://drive.google.com/drive/folders/1q6L-A7NAJICkVJ3YfmtkzBqEFKtPDekh?usp=sharing
 
+## Assignment 2 (Deadline - 2022-07-13)
+1. Search records using wildcards.
+2. Insert a record into a table including single quote.
+3. Create a table which describes a process of a system including relationship.    
+(table eg - orders, registrations, payments, bookings, etc ...)
+4. Use aggregation functions to find the result.
+
+
 ## Assignment 1 (Deadline - 2022-07-06)
 1. Create a database for your software/system.
 2. Create 3 to 5 tables with at least 3 columns and at 5 records(data row). 
