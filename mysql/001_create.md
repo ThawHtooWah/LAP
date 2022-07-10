@@ -107,3 +107,25 @@ EXPLAIN students;
 +--------------+-------------+------+-----+---------+----------------+
 3 rows in set (0.00 sec)
 ```
+------
+
+#### **1.8 Not Null**
+```sql
+CREATE TABLE employees
+(
+  id int PRIMARY KEY, 
+  name varchar(100) NOT NULL, 
+  address varchar(100)
+);
+
+CREATE TABLE employments
+(
+  employee_id int PRIMARY KEY, 
+  department varchar(100) NOT NULL, 
+  position varchar(100), 
+  salary decimal(10,2), 
+  joined_date date NOT NULL
+);  
+```
+
+
