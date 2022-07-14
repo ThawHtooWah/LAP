@@ -3,6 +3,16 @@ Assignment name format - **assignmnet1_name.txt**
 
 Please upload the assignment here - https://drive.google.com/drive/folders/1q6L-A7NAJICkVJ3YfmtkzBqEFKtPDekh?usp=sharing
 
+## Assignment 3 (Deadline - 2022-07-20)
+1. Update or Delete using subquery.
+2. Find **COMMON** records using join. 
+   - hint - inner join
+3. Get Null Value records using join. 
+   - hint - left or right join with only null value records
+   - this is quiz question and get reference at [DBMS_Lesson-3.1_SQL_Advanced.pptx](https://t.me/c/1679560724/111) -  slide 8.
+4. Get groupping records using aggregate functions.
+
+
 ## Assignment 2 (Deadline - 2022-07-13)
 1. Search records using wildcards.
 2. Insert a record into a table including single quote.
