@@ -3,6 +3,14 @@ Assignment name format - **assignmnet1_name.txt**
 
 Please upload the assignment here - https://drive.google.com/drive/folders/1q6L-A7NAJICkVJ3YfmtkzBqEFKtPDekh?usp=sharing
 
+
+## Assignment 4 (Deadline - 2022-07-30)
+1. Create a view with relavant view name.
+2. Create a user for admin role who owns all permission to all databases.
+3. Create another user for staff role who owns read only permission to only one database.
+4. Remove permission from staff role user (Question 3 user) due to its resignation.
+5. Create a savepoint, process other transactions and undo all the changes to the craeted savepoint stage.
+
 ## Assignment 3 (Deadline - 2022-07-20)
 1. Update or Delete using subquery.
 2. Find **COMMON** records using join. 
