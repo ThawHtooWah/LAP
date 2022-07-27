@@ -23,7 +23,6 @@ INSERT INTO Girls VALUES
 (9,'Bibo','Bibo9B'), 
 (10,'Ann','Ann10A');
 ```
------
 
 #### **2.2 Last Insert ID**
 ```sql

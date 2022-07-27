@@ -58,7 +58,6 @@ DROP TABLE table_name;
 DROP TABLE Girls;
 Query OK, 0 rows affected (0.04 sec)
 ```
----
 
 #### **4.4 Delete all records from a table**
 ```sql
